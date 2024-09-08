@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: black;
+}
+
+img {
+  padding-top: 6%;
+  max-width: 50%;
+  max-height: 70%;
+  display: block; /* Assure que l'image est un bloc */
+  margin: 0 auto; /* Centre l'image horizontalement */
+}
+
+body {
+  font-family: "Press Start 2P", system-ui, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: azure;
+  text-align: center;
+}
+
+p {
+  font-size: 100%;
+  padding: 2%;
+}
+
+a {
+  color: azure;
+  text-decoration: none; /* Retire le soulignement du lien */
+  font-size: 200%;
+  border: 3px solid red;
+  display: inline-block; 
+  padding: 1.5%;
+}
+
+a:hover {
+  color: red; /* Change la couleur du lien au survol */
+}
+
+@media(max-width: 375px) {
+  .image-container {
+      width: 100%; /* L'image prend toute la largeur de l'écran */
+      margin-bottom: 15%; /* Espace sous l'image pour séparer du texte */
+      margin-top: 30%;
+      margin: 0 auto;
+  }
+
+  img {
+      width: 100%; /* L'image prend toute la largeur du conteneur */
+      height: auto; /* Conserve le ratio de l'image */
+      max-width: none; /* Annule la largeur maximale pour les petits écrans */
+      margin-top: 30%;
+  }
+
+  p {
+      font-size: 100%; /* Adapter la taille du texte */
+      line-height:150%;
+      padding: 5%; /* Ajuster l'espacement du texte */
+      margin-top: 5%;
+  }
+
+  nav a {
+      font-size: 200%; /* Taille de police ajustée pour les liens */
+  }
+
+  nav {
+      flex-direction: column; /* Empile les éléments en colonne sur petits écrans */
+  }
+}
